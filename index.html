@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalized.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -22,10 +23,11 @@
                     <div class="hero-text">
                         <h1>Main Title</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima ullam suscipit quaerat veritatis repudiandae, autem quis ipsam hic voluptatum? Fuga velit ab vel harum repellat ullam quidem facere similique.</p>
-                        <p><a href="#">Get your Quote now!</a></p>
+                        <p class=hero-btn><a href="#">Get your Quote now!</a></p>
                     </div>
                     <div class="hero-video-btn">
-
+                        <h3>Learn 5 Minutes</h3>
+                        <p><i class="far fa-play-circle"></i></p>
                     </div>
                 </div>
             </div>
@@ -36,18 +38,18 @@
         <div class="section">
             <div class="wrapper">
                 <div class="benefits">
-                    <div class="benefitsText">
-                        <div class="main-header">
-                            <h2>Benefits</h2>
-                        </div>
-                        <ul class="benefitsList">
+                    <div class="main-header">
+                        <h2>Benefits</h2>
+                    </div>
+                    <div class="benefits-text">
+                        <ul class="benefits-list">
                             <li>Benefit 1</li>
                             <li>Benefit 2</li>
                             <li>Benefit 3</li>
                         </ul>
                     </div>
-                    <div class="benefitsImg">
-
+                    <div class="benefits-img">
+                        <img src="#" alt="This is the benefits image">
                     </div>
                 </div>
             </div>
@@ -80,7 +82,7 @@
         <!-- This is the How it works Section -->
         <div class="section">
             <div class="wrapper">
-                <div class="howItWorks">
+                <div class="how-it-works">
                     <div class="main-header">
                         <h2>How it works</h2>
                     </div>
@@ -121,11 +123,13 @@
         <!-- This is the Get a quote Section -->
         <div class="section">
             <div class="wrapper">
-                <div class="get-a-quote-text-box">
-                    <div class="main-header">
-                        <h2>Start Saving Today!</h2>
+                <div class="get-quote">
+                    <div class="get-a-quote-text-box">
+                        <div class="main-header">
+                            <h2>Start Saving Today!</h2>
+                        </div>
+                        <p><a href="#">Get a quick Quote!</a></p>
                     </div>
-                    <p><a href="#">Get a quick Quote!</a></p>
                 </div>
             </div>
         </div>
@@ -133,16 +137,18 @@
         <!-- This is the About Us Section -->
         <div class="section">
             <div class="wrapper">
-                <div class="about-us-img">
-                    <img src="#" alt="This is the about Image">
-                </div>
-                <div class="about-us-text-box">
-                    <div class="main-header">
-                        <h2>About Us</h2>
+                <div class="about-us">
+                    <div class="about-us-img">
+                        <img src="#" alt="This is the about Image">
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, consectetur, voluptas quaerat voluptatum temporibus beatae provident quia voluptate inventore asperiores, explicabo magni accusamus dicta tenetur laborum. Eum quam voluptatibus
-                        fuga?
-                    </p>
+                    <div class="about-us-text-box">
+                        <div class="main-header">
+                            <h2>About Us</h2>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, consectetur, voluptas quaerat voluptatum temporibus beatae provident quia voluptate inventore asperiores, explicabo magni accusamus dicta tenetur laborum. Eum quam
+                            voluptatibus fuga?
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,45 +157,47 @@
         <!-- This is the Pricing Section -->
         <div class="section">
             <div class="wrapper">
-                <div class="main-header">
-                    <h2>Pricing</h2>
-                </div>
-                <div class="pricing-box">
-                    <div class="pricing-box-1">
-                        <h3>Product One</h3>
-                        <p>Starting at:</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                        </ul>
+                <div class="pricing">
+                    <div class="main-header">
+                        <h2>Pricing</h2>
                     </div>
-                    <div class="pricing-box-2">
-                        <h3>Product two</h3>
-                        <p>Starting at:</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                        </ul>
+                    <div class="pricing-box">
+                        <div class="pricing-box-1">
+                            <h3>Product One</h3>
+                            <p>Starting at:</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-box-2">
+                            <h3>Product two</h3>
+                            <p>Starting at:</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-box-3">
+                            <h3>Product three</h3>
+                            <p>Starting at:</p>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                                <li><i class="fas fa-check-circle"></i> More information</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing-box-3">
-                        <h3>Product three</h3>
-                        <p>Starting at:</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                            <li><i class="fas fa-check-circle"></i> More information</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="pricing-bottom-text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet velit excepturi rem asperiores at voluptates nulla minima temporibus blanditiis maiores perferendis suscipit eos ab ratione, iure illo repellat. Ipsa, modi!</p>
-                    <p><a href="#">Call Now!</a></p>
+                    <div class="pricing-bottom-text">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet velit excepturi rem asperiores at voluptates nulla minima temporibus blanditiis maiores perferendis suscipit eos ab ratione, iure illo repellat. Ipsa, modi!</p>
+                        <p><a href="#">Call Now!</a></p>
+                    </div>
                 </div>
             </div>
         </div>
