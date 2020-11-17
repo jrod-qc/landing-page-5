@@ -15,6 +15,36 @@
 </head>
 
 <body>
+
+    <!-- This is the quote modal -->
+    <div class="quote-modal">
+        <div class="modal-form">
+            <div class="modal-header">
+                <h3>Quote Form</h3>
+                <p class="exitIcon"><i class="far fa-times-circle"></i></p>
+            </div>
+            <form action="/thank-you" method="POST">
+                <input type="text" name="firstName" placeholder="First Name" required><br>
+                <input type="text" name="lastName" placeholder="Last Name" required><br>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" required><br>
+                <input type="text" name="Email" placeholder="Email"><br>
+                <textarea name="notes" rows="5" placeholder="Comments"></textarea><br>
+                <button type="submit">Get Quote!</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- This is the video Modal -->
+    <div class="video-modal">
+        <div class="video-box">
+            <div class="modal-header-2">
+                <p class="exitIcon2"><i class="far fa-times-circle"></i></p>
+            </div>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/TPLPmGm6n-s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- this is the main Content -->
     <div class="content">
         <!-- This is the Hero Section -->
         <div class="section">
@@ -23,11 +53,11 @@
                     <div class="hero-text">
                         <h1>Main Title</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima ullam suscipit quaerat veritatis repudiandae, autem quis ipsam hic voluptatum? Fuga velit ab vel harum repellat ullam quidem facere similique.</p>
-                        <p class=hero-btn><a href="#">Get your Quote now!</a></p>
+                        <p><a class="hero-btn" href="#">Get your Quote now!</a></p>
                     </div>
                     <div class="hero-video-btn">
-                        <h3>Learn 5 Minutes</h3>
-                        <p><i class="far fa-play-circle"></i></p>
+                        <h3>Learn in 5 Minutes</h3>
+                        <p><a class="play-icon" href="#"><i class="far fa-play-circle"></i></a></p>
                     </div>
                 </div>
             </div>
@@ -202,6 +232,7 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

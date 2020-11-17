@@ -27,6 +27,143 @@ h3 {
     font-size: 2em;
 }
 
+
+/* This is the quote modal */
+
+.quote-modal {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.475);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.modal-form>form {
+    width: 85%;
+}
+
+.modal-form>form>input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.modal-form>form>textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(213, 213, 213);
+}
+
+.modal-form>form>button {
+    text-decoration: none;
+    background-color: rgb(216, 42, 42);
+    padding: 15px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.modal-header {
+    width: 85%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.exitIcon {
+    text-align: right;
+}
+
+.exitIcon>i {
+    cursor: pointer;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.exitIcon>i:hover {
+    color: rgb(216, 42, 42);
+}
+
+
+/* This is the video Modal */
+
+.video-modal {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.475);
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+
+.modal-header-2 {
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    min-width: 320px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.exitIcon2 {
+    text-align: right;
+}
+
+.exitIcon2>i {
+    cursor: pointer;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.exitIcon2>i:hover {
+    color: rgb(216, 42, 42);
+}
+
 .content {
     width: 100%;
 }
@@ -34,7 +171,6 @@ h3 {
 .wrapper {
     width: 100%;
     max-width: 1440px;
-    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -94,7 +230,7 @@ h3 {
     padding-top: 25px;
 }
 
-.hero-btn>a {
+.hero-btn {
     text-decoration: none;
     background-color: rgb(216, 42, 42);
     padding: 15px 40px;
@@ -111,7 +247,7 @@ h3 {
     color: white;
 }
 
-.hero-video-btn>p>i {
+.play-icon>i {
     font-size: 5em;
     color: white;
     cursor: pointer;
@@ -123,4 +259,17 @@ h3 {
 .benefits-text,
 .benefits-img {
     width: 50%;
+    align-content: center;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.benefits-list>li {
+    width: 100%;
 }
