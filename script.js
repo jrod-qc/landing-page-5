@@ -52,3 +52,36 @@ $(".exitIcon2").on("click", function() {
         console.log("Something Went Wrong");
     }
 })
+
+
+
+
+
+// This is the quote Modal
+
+$(".get-quote-btn").on("click", function() {
+    var quoteBtn = $(".get-quote-btn");
+    var quoteModal = $(".quote-modal");
+
+
+    if (quoteBtn == quoteBtn) {
+        quoteModal.show();
+        quoteModal.css("display", "flex");
+
+    } else {
+        console.log("something Went Wrong");
+    }
+})
+
+$(".exitIcon").on("click", function() {
+    var quoteModal = $(".quote-modal");
+    var exitIcon = $(".exitIcon");
+
+
+    if (exitIcon == exitIcon) {
+        quoteModal.hide();
+
+    } else {
+        console.log("something Went Wrong");
+    }
+})
