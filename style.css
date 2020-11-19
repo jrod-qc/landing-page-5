@@ -20,11 +20,16 @@ p {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 h3 {
     font-size: 2em;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0px 6px 12px 0px #00000052;
 }
 
 
@@ -40,6 +45,7 @@ h3 {
     height: 100vh;
     margin: 0 auto;
     display: none;
+    z-index: 5;
 }
 
 .modal-form {
@@ -125,14 +131,16 @@ h3 {
     height: 100vh;
     margin: 0 auto;
     display: none;
+    z-index: 5;
 }
 
 .modal-header-2 {
     width: 100%;
     font-size: 1.5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 20px 0;
+    color: white;
 }
 
 .video-box {
@@ -142,7 +150,7 @@ h3 {
     width: 100%;
     max-width: 800px;
     min-width: 320px;
-    background-color: white;
+    /* background-color: white; */
     margin: 0 auto;
     padding: 20px;
 }
@@ -164,6 +172,9 @@ h3 {
     color: rgb(216, 42, 42);
 }
 
+
+/* This is the main Content */
+
 .content {
     width: 100%;
 }
@@ -181,7 +192,45 @@ h3 {
 }
 
 .section:nth-child(1) {
-    background: rgba(0, 0, 0, 0.502) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/Family_AirflowLarge_1388x1008-d.jpg);
+    background: #0000009c url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/Family_AirflowLarge_1388x1008-d.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(3) {
+    /* background: rgba(0, 0, 0, 0.502) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/paul-volkmer-_Apdet7E5yU-unsplash-scaled.jpg); */
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(4) {
+    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    padding: 200px 0;
+}
+
+.section:nth-child(5) {
+    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
+    background-color: #101010;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(6) {
+    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
+    background-color: #f9f9f9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,8 +244,9 @@ h3 {
 .get-quote,
 .about-us,
 .pricing {
-    width: 100%;
+    width: 90%;
     height: 100vh;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -215,7 +265,9 @@ h3 {
 .hero-text,
 .hero-video-btn {
     width: 50%;
-    max-width: 400px;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 50px 0;
 }
 
 .hero-text {
@@ -223,7 +275,11 @@ h3 {
 }
 
 .hero-text>h1 {
-    font-size: 4em;
+    font-size: 5.5em;
+}
+
+.hero-text>p:nth-child(3) {
+    padding-top: 25px;
 }
 
 .hero-btn {
@@ -233,13 +289,23 @@ h3 {
 .hero-btn {
     text-decoration: none;
     background-color: rgb(216, 42, 42);
-    padding: 15px 40px;
+    padding: 25px 40px;
     color: white;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: .5s;
+    font-size: 1.2em;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.hero-btn:hover {
+    background-color: rgb(161, 32, 32);
 }
 
 .hero-video-btn {
@@ -251,16 +317,34 @@ h3 {
     font-size: 5em;
     color: white;
     cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.play-icon>i:hover {
+    color: #4CAF50;
 }
 
 
 /* this is the Benefits Section */
 
+.benefits>.main-header {
+    padding-bottom: 50px;
+}
+
+.benefits>.main-header>p {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .benefits-text,
 .benefits-img {
-    width: 50%;
+    width: 48%;
     align-content: center;
-    max-width: 500px;
+    max-width: 700px;
     min-width: 300px;
 }
 
@@ -268,8 +352,360 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    padding: 0;
 }
 
 .benefits-list>li {
+    width: 80%;
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list>li:nth-child(1)>h3 {
+    color: #34A2E1;
+}
+
+.benefits-list>li:nth-child(2)>h3 {
+    color: #0DD140;
+}
+
+.benefits-list>li:nth-child(3)>h3 {
+    color: #BC073B;
+}
+
+.benefits-list>li>p {
+    color: #2d2d2d;
+}
+
+
+/* this is the features section */
+
+.features>.main-header>h2 {
+    color: white;
+}
+
+.features {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.features .feature {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 500ms;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+}
+
+.features .feature.feature-1 {
+    background: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/04/TRI-3.3-mounted.jpg);
+    background-size: cover;
+    background-color: red;
+    clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
+}
+
+.features .feature.feature-2 {
+    background: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/04/STL-3.3-mounted.jpg);
+    background-size: cover;
+    background-color: green;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+
+/* This is the how it works section */
+
+.howItWorksList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.how-it-works {
+    margin: 0 auto;
+}
+
+.how-it-works>.main-header {
+    color: #242424;
+    padding: 75px 0;
+}
+
+.hiw-left,
+.hiw-right {
+    width: 50%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.hiw-left {
+    text-align: left;
+}
+
+.hiw-right {
+    text-align: right;
+}
+
+.hiw-text-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #242424;
+}
+
+.hiw-text-box>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.hiw-text-box>p {
+    width: 100%;
+    text-align: center;
+}
+
+.hiw-text-box>p>img {
+    /* position: absolute; */
+    width: 100px;
+    height: 150px;
+    box-shadow: none;
+}
+
+.flip-img {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+
+.hiw-right>h3 {
+    font-size: 2.5em;
+}
+
+.hiw-right>h3>i {
+    font-size: 1em;
+    color: #03A9F4;
+}
+
+.hiw-left>h3>i {
+    font-size: 1em;
+    color: #03A9F4;
+}
+
+.hiw-left>h3 {
+    font-size: 2.5em;
+}
+
+
+/* This is the quote section */
+
+.get-quote {
+    color: white;
+    text-align: center;
+}
+
+.get-quote-btn {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(216, 42, 42);
+    padding: 15px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.get-quote-btn:hover {
+    background-color: rgb(161, 32, 32);
+}
+
+
+/* this is the About us section */
+
+.about-us-img,
+.about-us-text-box {
+    width: 50%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.about-us-text {
+    position: relative;
+    right: 100px;
+    top: 10px;
+    padding: 40px 20px;
+    background-color: #03A9F4;
+    color: White;
+    box-shadow: 0px 5px 12px 0px #00000021;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* This is the pricing section */
+
+.pricing {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.pricing-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.pricing-box-1,
+.pricing-box-2,
+.pricing-box-3 {
+    width: 25%;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 0px 0px 50px 0px;
+    text-align: center;
+    box-shadow: 0px 6px 12px 0px #00000052;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.pricing-box-1 {
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.pricing-box-1>h3 {
+    background-color: #222222;
+    padding: 20px 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.pricing-box-1>ul>li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.pricing-box-1>ul>li>i {
+    color: rgb(51, 216, 90);
+}
+
+.pricing-box-1>ul {
+    padding: 0;
+}
+
+.pricing-box-2 {
+    transform: scale(1.1) !important;
+    background-color: #34A2E1;
+    color: white;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    z-index: 2;
+}
+
+.pricing-box-2>h3 {
+    background-color: #2a85b9;
+    padding: 20px 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.pricing-box-2>ul>li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.pricing-box-2>ul>li>i {
+    color: #fff;
+}
+
+.pricing-box-2>ul {
+    padding: 0;
+}
+
+.pricing-box-3 {
+    background-color: #3c3c3c;
+    color: white;
+}
+
+.pricing-box-3>h3 {
+    background-color: #222222;
+    padding: 20px 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.pricing-box-3>ul>li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.pricing-box-3>ul>li>i {
+    color: rgb(51, 216, 90);
+}
+
+.pricing-box-3>ul {
+    padding: 0;
+}
+
+.pricing-bottom-text {
+    width: 50%;
+    text-align: center;
+}
+
+.pricing-bottom-text>p:nth-child(2) {
+    padding-top: 25px;
+}
+
+.call-now-btn {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(216, 42, 42);
+    padding: 15px 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
