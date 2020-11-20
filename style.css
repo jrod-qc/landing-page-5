@@ -1,3 +1,8 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -15,16 +20,16 @@ a {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 3.3em;
 }
 
 img {
@@ -54,10 +59,11 @@ img {
     flex-wrap: wrap;
     width: 100%;
     max-width: 500px;
-    min-width: 320px;
+    min-width: 230px;
     background-color: white;
     margin: 0 auto;
     padding: 40px 20px;
+    box-shadow: 0px 5px 12px 0px black;
 }
 
 .modal-form>form {
@@ -96,9 +102,13 @@ img {
 .modal-header {
     width: 85%;
     font-size: 1.5em;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 0 0 20px 0;
+}
+
+.modal-header>h3 {
+    text-align: center;
 }
 
 .exitIcon {
@@ -139,7 +149,7 @@ img {
     font-size: 1.5em;
     display: flex;
     justify-content: flex-end;
-    padding: 20px 0;
+    padding: 0;
     color: white;
 }
 
@@ -149,10 +159,16 @@ img {
     flex-wrap: wrap;
     width: 100%;
     max-width: 800px;
-    min-width: 320px;
+    min-width: 230px;
     /* background-color: white; */
     margin: 0 auto;
     padding: 20px;
+}
+
+.video-box>iframe {
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 5px 12px 0px black;
 }
 
 .exitIcon2 {
@@ -201,11 +217,13 @@ img {
 
 .section:nth-child(3) {
     /* background: rgba(0, 0, 0, 0.502) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/paul-volkmer-_Apdet7E5yU-unsplash-scaled.jpg); */
-    background-color: #000;
+    background-color: #1b1b1b;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 100px 0 !important;
+    height: auto;
 }
 
 .section:nth-child(4) {
@@ -216,7 +234,6 @@ img {
     background-size: cover;
     background-attachment: fixed;
     height: auto;
-    padding: 200px 0;
 }
 
 .section:nth-child(5) {
@@ -231,6 +248,15 @@ img {
 .section:nth-child(6) {
     /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
     background-color: #f9f9f9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section:nth-child(7) {
+    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,7 +292,7 @@ img {
 .hero-video-btn {
     width: 50%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 230px;
     padding: 50px 0;
 }
 
@@ -345,7 +371,7 @@ img {
     width: 48%;
     align-content: center;
     max-width: 700px;
-    min-width: 300px;
+    min-width: 230px;
 }
 
 .benefits-list {
@@ -380,16 +406,20 @@ img {
 
 /* this is the features section */
 
-.features>.main-header>h2 {
+.features-header {
     color: white;
+    padding: 20px 0;
 }
 
 .features {
     position: relative;
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 230px;
+    height: 550px;
     margin: auto;
     box-sizing: border-box;
+    padding: 50px 0;
 }
 
 .features .feature {
@@ -407,17 +437,76 @@ img {
 }
 
 .features .feature.feature-1 {
-    background: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/04/TRI-3.3-mounted.jpg);
+    background: url(images/TRI-3.3-mounted-1024x683.jpg);
     background-size: cover;
-    background-color: red;
     clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
 }
 
 .features .feature.feature-2 {
-    background: url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/04/STL-3.3-mounted.jpg);
+    background: url(images/stealth-pro-x-.jpg);
     background-size: cover;
-    background-color: green;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 40% 100%);
+    /* background-color: green; */
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.features:hover .feature {
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.features .feature:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.features .feature .feature-content-1 {
+    position: absolute;
+    color: #242424;
+    background-color: #fff9;
+    top: 0;
+    /* left: -100%; */
+    padding: 10px;
+    opacity: 0;
+}
+
+.features .feature:hover .feature-content-1 {
+    right: 0;
+    opacity: 1;
+    width: 40%;
+    height: 100%;
+    /* text-align: center; */
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-content-1>h2 {
+    width: 100%;
+}
+
+.features .feature .feature-content-2 {
+    position: absolute;
+    color: #242424;
+    background-color: #fff9;
+    top: 0;
+    /* right: -100%; */
+    padding: 10px;
+    opacity: 0;
+}
+
+.features .feature:hover .feature-content-2 {
+    left: 0;
+    opacity: 1;
+    width: 40%;
+    height: 100%;
+    /* text-align: center; */
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-content-2>h2 {
+    width: 100%;
 }
 
 
@@ -434,6 +523,8 @@ img {
 
 .how-it-works {
     margin: 0 auto;
+    height: auto;
+    padding: 50px 0;
 }
 
 .how-it-works>.main-header {
@@ -445,7 +536,7 @@ img {
 .hiw-right {
     width: 50%;
     max-width: 400px;
-    min-width: 300px;
+    min-width: 230px;
     margin: 0 auto;
 }
 
@@ -491,9 +582,10 @@ img {
     -o-transform: scaleX(-1);
 }
 
-.hiw-right>h3 {
+
+/* .hiw-right>h3 {
     font-size: 2.5em;
-}
+} */
 
 .hiw-right>h3>i {
     font-size: 1em;
@@ -505,9 +597,10 @@ img {
     color: #03A9F4;
 }
 
-.hiw-left>h3 {
+
+/* .hiw-left>h3 {
     font-size: 2.5em;
-}
+} */
 
 
 /* This is the quote section */
@@ -546,17 +639,17 @@ img {
 .about-us-text-box {
     width: 50%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 230px;
     margin: 0 auto;
 }
 
 .about-us-text {
     position: relative;
-    right: 100px;
-    top: 10px;
+    /* right: 100px; */
+    /* top: 10px; */
     padding: 40px 20px;
-    background-color: #03A9F4;
-    color: White;
+    /* background-color: #03A9F4; */
+    color: #353535;
     box-shadow: 0px 5px 12px 0px #00000021;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -579,16 +672,17 @@ img {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 70px 0;
+    width: 90%;
 }
 
 .pricing-box-1,
 .pricing-box-2,
 .pricing-box-3 {
-    width: 25%;
+    width: 33%;
     max-width: 400px;
-    min-width: 300px;
-    padding: 0px 0px 50px 0px;
+    min-width: 230px;
+    padding: 0px 0px 100px 0px;
     text-align: center;
     box-shadow: 0px 6px 12px 0px #00000052;
     border-radius: 5px;
@@ -708,4 +802,132 @@ img {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+@media only screen and (max-width:1000px) {
+    .section {
+        height: auto;
+        padding: 0 !important;
+    }
+    .hero,
+    .benefits,
+    .features,
+    .how-it-works,
+    .get-quote,
+    .about-us,
+    .pricing {
+        width: 90%;
+        height: auto;
+        padding: 150px 0;
+    }
+    .hero-text,
+    .hero-video-btn {
+        width: 90%;
+        text-align: center;
+    }
+    .benefits>.main-header>p {
+        width: 80%;
+    }
+    .benefits-text,
+    .benefits-img {
+        width: 100%;
+    }
+    .benefits-list {
+        padding-bottom: 50px;
+    }
+    .benefits-list>li {
+        width: 80%;
+        text-align: center;
+    }
+    .about-us-img,
+    .about-us-text-box {
+        width: 100%;
+        right: 0;
+    }
+    .about-us-text {
+        right: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .pricing-box-1,
+    .pricing-box-2,
+    .pricing-box-3 {
+        width: 33%;
+        margin-top: 30px;
+    }
+    .pricing-bottom-text {
+        width: 100%;
+    }
+    .video-modal {
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .modal-form {
+        width: 75%;
+        padding: 20px 20px;
+    }
+    .modal-header {
+        padding: 0;
+    }
+    .section {
+        width: 100%;
+        height: auto;
+        background-blend-mode: none;
+    }
+    .section:nth-child(1) {
+        background: #0000009c url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/07/Family_AirflowLarge_1388x1008-d.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: inherit;
+    }
+    .hero,
+    .benefits,
+    .features,
+    .how-it-works,
+    .get-quote,
+    .about-us,
+    .pricing {
+        padding: 50px 0;
+    }
+    .hero-text>h1 {
+        font-size: 3.5em;
+    }
+    .hero-btn {
+        padding: 15px 20px;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: .9em;
+    }
+    .hiw-left,
+    .hiw-right {
+        min-width: 100%;
+    }
+    .pricing-box-2 {
+        transform: none !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -o-transform: none !important;
+    }
+    .hero,
+    .benefits,
+    .features,
+    .how-it-works,
+    .get-quote,
+    .about-us,
+    .pricing {
+        padding: 100px 0;
+    }
 }
