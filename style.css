@@ -41,7 +41,8 @@ img {
 /* This is the quote modal */
 
 .quote-modal {
-    /* display: flex; */
+    /*display: flex;
+    */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -58,7 +59,7 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     min-width: 230px;
     background-color: white;
     margin: 0 auto;
@@ -76,6 +77,17 @@ img {
     border-radius: 5px;
     margin-top: 5px;
     border: 1px solid rgb(213, 213, 213);
+}
+
+.modal-form>form>select {
+    width: 98%;
+    border: 1px solid #8080804d;
+    padding: 10px 5px;
+    border-radius: 3px;
+}
+
+.modal-form>form>label {
+    padding: 10px 0;
 }
 
 .modal-form>form>textarea {
@@ -97,13 +109,20 @@ img {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.modal-form>form>button:hover {
+    background-color: rgb(184, 35, 35);
 }
 
 .modal-header {
     width: 85%;
     font-size: 1.5em;
-    /* display: flex;
-    justify-content: space-between; */
     padding: 0 0 20px 0;
 }
 
