@@ -20,21 +20,36 @@ a {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 h3 {
-    font-size: 3.3em;
+    font-size: 2.5em;
 }
 
 img {
     width: 100%;
     box-shadow: 0px 6px 12px 0px #00000052;
+}
+
+
+/* This is the nav section */
+
+.nav-trigger {
+    left: 0;
+}
+
+.nav-trigger>a {
+    width: 75px;
+}
+
+.nav-trigger>a>img {
+    width: 100%;
 }
 
 
@@ -44,7 +59,7 @@ img {
     /*display: flex;
     */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
     background-color: rgba(0, 0, 0, 0.475);
     width: 100%;
@@ -65,6 +80,7 @@ img {
     margin: 0 auto;
     padding: 40px 20px;
     box-shadow: 0px 5px 12px 0px black;
+    overflow: auto;
 }
 
 .modal-form>form {
@@ -179,7 +195,6 @@ img {
     width: 100%;
     max-width: 800px;
     min-width: 230px;
-    /* background-color: white; */
     margin: 0 auto;
     padding: 20px;
 }
@@ -257,6 +272,7 @@ img {
 
 .section:nth-child(5) {
     /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
+    height: 50vh;
     background-color: #101010;
     background-position: center;
     background-repeat: no-repeat;
@@ -299,9 +315,17 @@ img {
     justify-content: space-evenly;
 }
 
+.get-quote {
+    height: 50vh;
+}
+
 .main-header {
     width: 100%;
     text-align: center;
+}
+
+.main-header>h2 {
+    padding: 20px 0;
 }
 
 
@@ -664,12 +688,9 @@ img {
 
 .about-us-text {
     position: relative;
-    /* right: 100px; */
-    /* top: 10px; */
     padding: 40px 20px;
-    /* background-color: #03A9F4; */
     color: #353535;
-    box-shadow: 0px 5px 12px 0px #00000021;
+    /* box-shadow: 0px 5px 12px 0px #00000021; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -849,7 +870,7 @@ img {
     }
     .benefits-text,
     .benefits-img {
-        width: 100%;
+        width: 75%;
     }
     .benefits-list {
         padding-bottom: 50px;
@@ -860,7 +881,7 @@ img {
     }
     .about-us-img,
     .about-us-text-box {
-        width: 100%;
+        width: 75%;
         right: 0;
     }
     .about-us-text {
@@ -870,6 +891,9 @@ img {
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
+    }
+    .pricing-box {
+        width: 100%;
     }
     .pricing-box-1,
     .pricing-box-2,
