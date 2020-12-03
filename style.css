@@ -41,15 +41,166 @@ img {
 /* This is the nav section */
 
 .nav-trigger {
-    left: 0;
+    position: fixed;
+    right: 0;
+    width: 100px;
+    padding: 0px;
+    z-index: 5;
 }
 
 .nav-trigger>a {
-    width: 75px;
+    background-color: #0000002e;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    padding: 0;
+    border-radius: 50%;
+    z-index: 5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .nav-trigger>a>img {
     width: 100%;
+    box-shadow: none;
+}
+
+.nav-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+.nav {
+    /*display: none;
+    */
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 180px;
+    z-index: 5;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.331);
+    left: -180px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.logo {
+    width: 50%;
+}
+
+.logo>p {
+    text-align: center;
+}
+
+.logo>p>a>img {
+    width: 100%;
+    box-shadow: none;
+}
+
+.nav>ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav>ul>li {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav>ul>li>a {
+    text-decoration: none;
+    color: #373737;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.nav>ul>li>a:hover {
+    color: red;
+}
+
+.arrow-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 0px;
+    height: 100vh;
+    /* background-color: red; */
+    top: 0;
+}
+
+.arrow {
+    padding: 15px;
+    position: absolute;
+    right: -234px;
+    z-index: 6;
+    background-color: #fff;
+    box-shadow: 5px 4px 5px rgb(0 0 0 / 11%);
+    cursor: pointer;
+}
+
+.tool-tip-trigger,
+.tool-tip-trigger-2 {
+    display: none;
+    width: 110px;
+    position: absolute;
+    right: -145px;
+    background-color: #000000d1;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    top: -90px;
+    text-align: center;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#arrow:hover .tool-tip-trigger {
+    display: block;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+#arrow-2:hover .tool-tip-trigger-2 {
+    display: block;
+}
+
+.arrow>i {
+    font-size: 1.7em;
+    color: #ea252c;
+}
+
+.arrow-2 {
+    display: none;
+    padding: 15px;
+    position: absolute;
+    right: -234px;
+    z-index: 6;
+    background-color: #fff;
+    box-shadow: 5px 4px 5px rgb(0 0 0 / 11%);
+    cursor: pointer;
+}
+
+.arrow-2>i {
+    font-size: 1.7em;
+    color: #ea252c;
 }
 
 
@@ -227,6 +378,9 @@ img {
 
 .content {
     width: 100%;
+    height: 100%;
+    background-color: #000;
+    /* background-blend-mode: multiply; */
 }
 
 .wrapper {
@@ -249,9 +403,17 @@ img {
     background-attachment: fixed;
 }
 
+.section:nth-child(2) {
+    background: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .section:nth-child(3) {
     /* background: rgba(0, 0, 0, 0.502) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/paul-volkmer-_Apdet7E5yU-unsplash-scaled.jpg); */
-    background-color: #1b1b1b;
+    background-color: #ffffff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,7 +424,7 @@ img {
 
 .section:nth-child(4) {
     /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
-    background-color: white;
+    background-color: #f2f2f2;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -272,7 +434,7 @@ img {
 
 .section:nth-child(5) {
     /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
-    height: 50vh;
+    height: auto;
     background-color: #101010;
     background-position: center;
     background-repeat: no-repeat;
@@ -450,7 +612,7 @@ img {
 /* this is the features section */
 
 .features-header {
-    color: white;
+    color: #373737;
     padding: 20px 0;
 }
 
@@ -552,6 +714,10 @@ img {
     width: 100%;
 }
 
+.features-2 {
+    display: none;
+}
+
 
 /* This is the how it works section */
 
@@ -572,7 +738,7 @@ img {
 
 .how-it-works>.main-header {
     color: #242424;
-    padding: 75px 0;
+    padding: 0 0 75px 0;
 }
 
 .hiw-left,
@@ -712,7 +878,7 @@ img {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 70px 0;
+    padding: 50px 0;
     width: 90%;
 }
 
@@ -721,8 +887,8 @@ img {
 .pricing-box-3 {
     width: 33%;
     max-width: 400px;
-    min-width: 230px;
-    padding: 0px 0px 100px 0px;
+    min-width: 260px;
+    padding: 0px 0px 60px 0px;
     text-align: center;
     box-shadow: 0px 6px 12px 0px #00000052;
     border-radius: 5px;
@@ -858,7 +1024,7 @@ img {
     .pricing {
         width: 90%;
         height: auto;
-        padding: 150px 0;
+        padding: 100px 0;
     }
     .hero-text,
     .hero-video-btn {
@@ -868,7 +1034,9 @@ img {
     .benefits>.main-header>p {
         width: 80%;
     }
-    .benefits-text,
+    .benefits-text {
+        width: 100%;
+    }
     .benefits-img {
         width: 75%;
     }
@@ -881,7 +1049,7 @@ img {
     }
     .about-us-img,
     .about-us-text-box {
-        width: 75%;
+        width: 100%;
         right: 0;
     }
     .about-us-text {
@@ -900,6 +1068,7 @@ img {
     .pricing-box-3 {
         width: 33%;
         margin-top: 30px;
+        min-width: 230px;
     }
     .pricing-bottom-text {
         width: 100%;
@@ -909,9 +1078,30 @@ img {
     }
 }
 
+@media only screen and (max-width:768px) {
+    .features {
+        display: none;
+    }
+    .features-2 {
+        display: block;
+        width: 80%;
+        color: #373737;
+    }
+    .feature-content-2 {
+        padding-top: 20px;
+    }
+    .feature-content-2>ul {
+        padding: 10px 0 20px 20px;
+    }
+    .feature-content-2>img {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
 @media only screen and (max-width:460px) {
     .modal-form {
-        width: 75%;
+        width: 100%;
         padding: 20px 20px;
     }
     .modal-header {
@@ -953,9 +1143,30 @@ img {
     p {
         font-size: .9em;
     }
+    /* .features {
+        display: none;
+    }
+    .features-2 {
+        display: block;
+        width: 80%;
+        color: #373737;
+    }
+    .feature-content-2 {
+        padding-top: 20px;
+    }
+    .feature-content-2>ul {
+        padding: 10px 0 20px 20px;
+    }
+    .feature-content-2>img {
+        width: 100%;
+        box-shadow: none;
+    } */
     .hiw-left,
     .hiw-right {
         min-width: 100%;
+    }
+    .pricing-box {
+        padding: 20px 0;
     }
     .pricing-box-2 {
         transform: none !important;
@@ -971,6 +1182,56 @@ img {
     .get-quote,
     .about-us,
     .pricing {
-        padding: 100px 0;
+        padding: 70px 0;
+    }
+    .hiw-text-box>p>img {
+        width: 60px;
+        height: 80px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .hero {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-height:1000px) {
+    .nav>ul {
+        width: 100%;
+        height: 150px;
+        overflow: auto;
+    }
+    .section {
+        height: auto;
+    }
+    .hero,
+    .benefits,
+    .features,
+    .how-it-works,
+    .get-quote,
+    .about-us,
+    .pricing {
+        width: 90%;
+        height: 100%;
+        padding: 50px 0;
+    }
+    .features {
+        display: none;
+    }
+    .features-2 {
+        display: block;
+        width: 80%;
+        color: #373737;
+    }
+    .feature-content-2 {
+        padding-top: 20px;
+    }
+    .feature-content-2>ul {
+        padding: 10px 0 20px 20px;
+    }
+    .feature-content-2>img {
+        width: 100%;
+        box-shadow: none;
     }
 }

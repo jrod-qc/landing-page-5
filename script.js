@@ -85,3 +85,24 @@ $(".exitIcon").on("click", function() {
         console.log("something Went Wrong");
     }
 })
+
+
+// This is the nav section
+
+$(".arrow").on("click", function() {
+    $(".nav").css("transform", "translateX(180px)");
+    $(".arrow").css("display", "none");
+    $(".arrow-2").css("display", "block");
+})
+
+$(".arrow-2").on("click", function() {
+    $(".nav").css("transform", "translateX(0px)");
+    $(".arrow").css("display", "block");
+    $(".arrow-2").css("display", "none");
+})
+
+$(".nav-click").on("click", function() {
+    $(".nav").css("transform", "translateX(0px)");
+    $(".arrow").css("display", "block");
+    $(".arrow-2").css("display", "none");
+})
