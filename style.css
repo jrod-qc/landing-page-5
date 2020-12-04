@@ -1119,15 +1119,6 @@ img {
         background-size: cover;
         background-attachment: inherit;
     }
-    .hero,
-    .benefits,
-    .features,
-    .how-it-works,
-    .get-quote,
-    .about-us,
-    .pricing {
-        padding: 50px 0;
-    }
     .hero-text>h1 {
         font-size: 3.5em;
     }
@@ -1143,24 +1134,6 @@ img {
     p {
         font-size: .9em;
     }
-    /* .features {
-        display: none;
-    }
-    .features-2 {
-        display: block;
-        width: 80%;
-        color: #373737;
-    }
-    .feature-content-2 {
-        padding-top: 20px;
-    }
-    .feature-content-2>ul {
-        padding: 10px 0 20px 20px;
-    }
-    .feature-content-2>img {
-        width: 100%;
-        box-shadow: none;
-    } */
     .hiw-left,
     .hiw-right {
         min-width: 100%;
