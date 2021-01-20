@@ -78,8 +78,6 @@ img {
 }
 
 .nav {
-    /*display: none;
-    */
     position: fixed;
     background-color: white;
     height: 100vh;
@@ -140,7 +138,6 @@ img {
     align-items: center;
     width: 0px;
     height: 100vh;
-    /* background-color: red; */
     top: 0;
 }
 
@@ -211,10 +208,7 @@ img {
 /* This is the quote modal */
 
 .quote-modal {
-    /*display: flex;
-    */
     justify-content: center;
-    /* align-items: center; */
     position: fixed;
     background-color: rgba(0, 0, 0, 0.475);
     width: 100%;
@@ -322,7 +316,6 @@ img {
 /* This is the video Modal */
 
 .video-modal {
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -384,7 +377,6 @@ img {
     width: 100%;
     height: 100%;
     background-color: #000;
-    /* background-blend-mode: multiply; */
 }
 
 .wrapper {
@@ -408,7 +400,8 @@ img {
 }
 
 .section:nth-child(2) {
-    background: #fff;
+    /* background: #000000c7 url(http://lp5.quietcooldealer.com/wp-content/uploads/2021/01/AFG-PRO-2.0.jpg); */
+    background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -416,7 +409,7 @@ img {
 }
 
 .section:nth-child(3) {
-    background: #2c3e50;
+    background: #1f1f1f;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -424,7 +417,6 @@ img {
 }
 
 .section:nth-child(4) {
-    /* background: rgba(0, 0, 0, 0.502) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/11/paul-volkmer-_Apdet7E5yU-unsplash-scaled.jpg); */
     background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
@@ -435,7 +427,6 @@ img {
 }
 
 .section:nth-child(5) {
-    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
     background-color: #171717;
     background-position: center;
     background-repeat: no-repeat;
@@ -445,7 +436,6 @@ img {
 }
 
 .section:nth-child(6) {
-    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
     height: auto;
     background-color: #ffffff;
     background-position: center;
@@ -455,8 +445,7 @@ img {
 }
 
 .section:nth-child(7) {
-    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
-    background-color: #f9f9f9;
+    background-color: #f9f9f9f7;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -464,12 +453,15 @@ img {
 }
 
 .section:nth-child(8) {
-    /* background: rgb(0 0 0 / 71%) url(https://dev20.quietcoolsystems.com/wp-content/uploads/2020/06/RmWHF_Header.jpg); */
     background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.hideme {
+    opacity: 0;
 }
 
 .hero,
@@ -500,16 +492,11 @@ img {
 }
 
 
-/* .main-header>h2 {
-    padding: 20px 0;
-} */
-
-
 /* this is the Hero Section */
 
 .hero {
-    height: 800px;
-    max-height: 800px;
+    height: 100vh;
+    padding: 0;
 }
 
 .hero-text,
@@ -581,12 +568,58 @@ img {
     color: #4CAF50;
 }
 
+.scroll-downs {
+    position: relative;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
 
 /* Who we are section */
 
 .who-we-are {
     width: 90%;
-    color: #373737;
+    color: rgb(41, 41, 41);
     padding: 150px 0;
 }
 
@@ -602,16 +635,16 @@ img {
 .media-icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     width: 80%;
     padding: 20px 0;
     margin: 30px auto;
-    background-color: #fff;
-    box-shadow: 0px 0px 15px #0000003b;
+    /* box-shadow: 0px 0px 15px #0000003b; */
 }
 
 .media-icons>ul {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -625,7 +658,10 @@ img {
     align-content: center;
     padding: 10px;
     list-style: none;
-    width: 20%;
+    width: 200px;
+    height: 200px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -639,6 +675,7 @@ img {
     -moz-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
     -o-transform: translateY(-20px);
+    background-color: #2b2b2b;
 }
 
 .media-icons>ul>li>a>img {
@@ -684,15 +721,15 @@ img {
 }
 
 .benefits-list>li:nth-child(1)>h3 {
-    color: #34A2E1;
+    color: #ffffff;
 }
 
 .benefits-list>li:nth-child(2)>h3 {
-    color: #0DD140;
+    color: #ffffff;
 }
 
 .benefits-list>li:nth-child(3)>h3 {
-    color: #BC073B;
+    color: #ffffff;
 }
 
 .benefits-list>li>p {
@@ -829,12 +866,33 @@ img {
     background-color: #fff;
 }
 
-.hiw-left {
+.hiw-title {
+    position: absolute;
+    margin: 0 auto;
+    color: white;
+    text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
+}
+
+.hiw-text-box-side {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    /* max-width: 1440px; */
+    max-width: 1440px;
+}
+
+.hiw-left {
+    width: 49%;
+    /* border: 1px solid blue; */
+}
+
+.hiw-right {
+    width: 50%;
+    /* border: 1px solid red; */
 }
 
 .hiw-text-box {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -852,19 +910,19 @@ img {
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
-    padding: 300px 0;
+    padding: 550px 0;
 }
 
-.open-window>h3 {
+.hiw-right>h3 {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 4em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
 
-.open-window>p {
+.hiw-right>p {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 2em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
@@ -881,19 +939,19 @@ img {
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
-    padding: 300px 0;
+    padding: 550px 0;
 }
 
-.turn-it-on>h3 {
+.hiw-left>h3 {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 4em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
 
-.turn-it-on>p {
+.hiw-left>p {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 2em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
@@ -912,19 +970,19 @@ img {
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
-    padding: 300px 0;
+    padding: 550px 0;
 }
 
 .bring-fresh-air-in>h3 {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 4em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
 
 .bring-fresh-air-in>p {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 2em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
@@ -943,19 +1001,19 @@ img {
     background-size: cover;
     background-blend-mode: multiply;
     color: white;
-    padding: 300px 0;
+    padding: 550px 0;
 }
 
 .enjoy>h3 {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 4em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
 
 .enjoy>p {
     max-width: 1440px;
-    width: 70%;
+    width: 100%;
     font-size: 2em;
     text-shadow: rgb(0 0 0 / 50%) 2px 3px 5px;
 }
@@ -1001,16 +1059,50 @@ img {
     margin: 0 auto;
 }
 
+.about-us-img {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
 .about-us-text {
     position: relative;
     padding: 40px 20px;
     color: #353535;
-    /* box-shadow: 0px 5px 12px 0px #00000021; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+}
+
+
+/* This is the testimonial Section */
+
+.testimonials {
+    padding: 150px 0;
+}
+
+.testimonials-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 20px 0;
+}
+
+.testimonials-box>li {
+    width: 30%;
+    text-align: center;
+    list-style: none;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background-color: #fff;
+    padding: 25px 10px 115px 10px;
+    border: 1px solid #00000008;
+}
+
+.testimonials-ratings {
+    color: #ffb200;
+    padding: 0;
 }
 
 
@@ -1027,7 +1119,7 @@ img {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 100px 0;
     width: 90%;
 }
 
@@ -1129,6 +1221,10 @@ img {
     padding: 5px 0;
 }
 
+.subtitle {
+    padding: 30px;
+}
+
 .pricing-box-3>ul>li>i {
     color: rgb(51, 216, 90);
 }
@@ -1160,21 +1256,6 @@ img {
 }
 
 @media only screen and (max-width:1000px) {
-    /* .section {
-        height: auto;
-        padding: 0 !important;
-    } */
-    /* .hero,
-    .benefits,
-    .features,
-    .how-it-works,
-    .get-quote,
-    .about-us,
-    .pricing {
-        width: 90%;
-        height: auto;
-        padding: 100px 0;
-    } */
     .hero-text,
     .hero-video-btn {
         width: 90%;
