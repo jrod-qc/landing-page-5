@@ -129,7 +129,31 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if (bottom_of_window > bottom_of_object) {
 
-                $(this).animate({ 'opacity': '1' }, 800);
+                $(this).animate({ 'opacity': '1' }, 600);
+            }
+        });
+
+        $('.hideme-2').each(function(i) {
+
+            var bottom_of_object_2 = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window_2 = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window_2 > bottom_of_object_2) {
+
+                $(this).animate({ 'opacity': '1' }, 1200);
+            }
+        });
+
+        $('.hideme-3').each(function(i) {
+
+            var bottom_of_object_3 = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window_3 = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if (bottom_of_window_3 > bottom_of_object_3) {
+
+                $(this).animate({ 'opacity': '1' }, 1800);
             }
         });
 

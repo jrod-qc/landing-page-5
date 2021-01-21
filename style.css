@@ -460,7 +460,9 @@ img {
     background-attachment: fixed;
 }
 
-.hideme {
+.hideme,
+.hideme-2,
+.hideme-3 {
     opacity: 0;
 }
 
@@ -513,6 +515,15 @@ img {
 
 .hero-text>h1 {
     font-size: 3.5em;
+    text-shadow: 0px 3px 2px #00000040;
+}
+
+.hero-video-btn>h2 {
+    text-shadow: 0px 3px 2px #00000040;
+}
+
+.hero-text>p {
+    text-shadow: 0px 3px 2px #00000040;
 }
 
 .hero-text>p:nth-child(5) {
@@ -524,6 +535,7 @@ img {
     color: white;
     text-decoration: none;
     font-size: 1.5em;
+    text-shadow: 0px 3px 2px #00000040;
 }
 
 .hero-btn {
@@ -881,12 +893,12 @@ img {
 }
 
 .hiw-left {
-    width: 49%;
+    width: 40%;
     /* border: 1px solid blue; */
 }
 
 .hiw-right {
-    width: 50%;
+    width: 40%;
     /* border: 1px solid red; */
 }
 
@@ -1037,15 +1049,19 @@ img {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
+    transition: background-color .5s;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -ms-transition: background-color .5s;
+    -o-transition: background-color .5s;
 }
 
 .get-quote-btn:hover {
-    background-color: rgb(161, 32, 32);
+    background-color: rgb(179, 33, 33);
+}
+
+.start-saving {
+    font-size: 4em;
 }
 
 
@@ -1352,6 +1368,38 @@ img {
 }
 
 @media only screen and (max-width:768px) {
+    .hero {
+        height: 100vh;
+    }
+    .hero-text>h1 {
+        font-size: 2.5em;
+    }
+    .hero-text>h2 {
+        font-size: 2em;
+    }
+    .hero-text>p {
+        font-size: 1.3em;
+    }
+    .hero-btn {
+        font-size: 1.3em;
+    }
+    .hero-video-btn {
+        padding: 20px;
+    }
+    .hero-video-btn>h2 {
+        font-size: 2em;
+    }
+    .play-icon>i {
+        font-size: 4em;
+    }
+    .scroll-downs {
+        top: 0;
+    }
+    .media-icons>ul>li {
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+    }
     .features {
         display: none;
     }
@@ -1369,6 +1417,58 @@ img {
     .feature-content-2>img {
         width: 100%;
         box-shadow: none;
+    }
+    .open-window {
+        padding: 300px 0;
+    }
+    .turn-it-on {
+        background-position: left;
+        padding: 300px 0;
+    }
+    .bring-fresh-air-in {
+        padding: 300px 0;
+    }
+    .enjoy {
+        padding: 300px 0;
+    }
+    .hiw-right {
+        width: 65%;
+    }
+    .hiw-left {
+        width: 65%;
+    }
+    .hiw-left>h3 {
+        font-size: 3.5em;
+    }
+    .start-saving {
+        font-size: 4em;
+    }
+    .get-quote {
+        height: 100%;
+    }
+    .testimonials {
+        width: 90%;
+    }
+    .testimonials-box>li {
+        width: 50%;
+        margin-top: 40px;
+    }
+    .pricing-box-1,
+    .pricing-box-2,
+    .pricing-box-3 {
+        width: 60%;
+        margin-top: 30px;
+        min-width: 230px;
+        height: 100%;
+    }
+    .pricing-box-1>h3 {
+        font-size: 1.8em;
+    }
+    .pricing-box-2>h3 {
+        font-size: 1.8em;
+    }
+    .pricing-box-3>h3 {
+        font-size: 1.8em;
     }
 }
 
@@ -1407,9 +1507,55 @@ img {
     p {
         font-size: .9em;
     }
+    .hero {
+        height: 100%;
+        padding: 50px 0 !important;
+    }
+    .hero-text {
+        padding: 20px 0 20px 0;
+    }
+    .hero-text>h1 {
+        font-size: 2em;
+    }
+    .hero-text>p {
+        font-size: 1em;
+    }
+    .hero-text>h2 {
+        font-size: 1.5em;
+    }
+    .hero-video-btn>h2 {
+        font-size: 1.5em;
+    }
+    .who-we-are {
+        padding: 50px 0;
+    }
+    .open-window {
+        padding: 200px 0;
+        background-position: top center;
+    }
     .hiw-left,
     .hiw-right {
-        min-width: 100%;
+        width: 100%;
+        padding: 10px;
+    }
+    .hiw-right>h3 {
+        text-align: center;
+        font-size: 2em;
+    }
+    .hiw-right>p {
+        text-align: center;
+        font-size: 1em;
+    }
+    .hiw-left>h3 {
+        text-align: center;
+        font-size: 2em;
+    }
+    .hiw-left>p {
+        text-align: center;
+        font-size: 1em;
+    }
+    .start-saving {
+        font-size: 2em;
     }
     .pricing-box {
         padding: 20px 0;
@@ -1433,6 +1579,9 @@ img {
     .hiw-text-box>p>img {
         width: 60px;
         height: 80px;
+    }
+    .testimonials-box>li {
+        width: 70%;
     }
 }
 
