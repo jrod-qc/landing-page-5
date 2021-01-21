@@ -460,6 +460,14 @@ img {
     background-attachment: fixed;
 }
 
+.section:nth-child(9) {
+    background-color: #0c0c0c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .hideme,
 .hideme-2,
 .hideme-3 {
@@ -1271,6 +1279,101 @@ img {
     -o-border-radius: 5px;
 }
 
+
+/* This is the footer section */
+
+.footer {
+    padding: 20px 0 20px 0;
+    bottom: 0;
+    background-color: #0c0c0c;
+}
+
+.footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.footer-section-1,
+.footer-section-2,
+.footer-section-3 {
+    border: 1px solid red;
+    width: 33%;
+    overflow: hidden;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.footer-bottom-left,
+.footer-bottom-right {
+    width: 49%;
+    /* border: 1px solid green; */
+    text-align: center;
+    list-style: none;
+    color: white;
+}
+
+.footer-bottom-left>a {
+    color: #3c3c3c;
+}
+
+.footer-bottom-right>a {
+    color: #3c3c3c;
+}
+
+.mobile-call-to-action {
+    display: none;
+    padding: 25px 0;
+    background-color: #191919;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.mobile-call-to-action>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.mobile-call-to-action>ul>li {
+    list-style: none;
+}
+
+.call-now-footer {
+    color: white;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    padding: 15px 17px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.get-quote-btn-footer {
+    color: white;
+    width: 150px;
+    height: 150px;
+    background-color: #d92a29;
+    padding: 15px 17px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 @media only screen and (max-width:1000px) {
     .hero-text,
     .hero-video-btn {
@@ -1470,6 +1573,11 @@ img {
     .pricing-box-3>h3 {
         font-size: 1.8em;
     }
+    .footer-bottom-left,
+    .footer-bottom-right {
+        width: 100%;
+        padding: 10px 0;
+    }
 }
 
 @media only screen and (max-width:460px) {
@@ -1582,6 +1690,12 @@ img {
     }
     .testimonials-box>li {
         width: 70%;
+    }
+    .mobile-call-to-action {
+        display: block;
+    }
+    .footer {
+        padding: 20px 0 70px 0;
     }
 }
 

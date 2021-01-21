@@ -86,6 +86,35 @@ $(".exitIcon").on("click", function() {
     }
 })
 
+// This is the quote Modal
+
+$(".get-quote-btn-footer").on("click", function() {
+    var quoteBtn = $(".get-quote-btn");
+    var quoteModal = $(".quote-modal");
+
+
+    if (quoteBtn == quoteBtn) {
+        quoteModal.show();
+        quoteModal.css("display", "flex");
+
+    } else {
+        console.log("something Went Wrong");
+    }
+})
+
+$(".exitIcon").on("click", function() {
+    var quoteModal = $(".quote-modal");
+    var exitIcon = $(".exitIcon");
+
+
+    if (exitIcon == exitIcon) {
+        quoteModal.hide();
+
+    } else {
+        console.log("something Went Wrong");
+    }
+})
+
 
 // This is the nav section
 
